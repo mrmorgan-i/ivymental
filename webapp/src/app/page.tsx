@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { BarChart3, MessageSquare, TrendingUp, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SentimentPieChart } from "@/components/charts/sentiment-pie-chart";

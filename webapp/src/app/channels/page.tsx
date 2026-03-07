@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getChannelStats } from "@/lib/db/queries";
 import { ChannelCard } from "@/components/channel-card";
 

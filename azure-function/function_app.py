@@ -304,10 +304,6 @@ def _upsert_run(
             INSERT INTO runs
                 (run_id, channel_handle, comments_pulled, comments_scored, status)
             VALUES (%s, %s, %s, %s, %s)
-            ON CONFLICT (run_id, channel_handle) DO UPDATE
-                SET comments_pulled = EXCLUDED.comments_pulled,
-                    comments_scored = EXCLUDED.comments_scored,
-                    status          = EXCLUDED.status
             """,
             (run_id, channel_handle, comments_pulled, comments_scored, status),
         )
